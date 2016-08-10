@@ -9,8 +9,8 @@ public class LcmUsingHcf {
 
   public static int lcm(int p, int q) {
     //using the property L.C.M * H.C.F = p * q
-    //so L.C.M = p * (q / H.C.F)
-    return p * (q / Hcf.hcf(p,q));
+    //so L.C.M = p * q / H.C.F
+    return p * q / Hcf.hcf(p,q);
   }
 
   public static void main(String[] args) {
