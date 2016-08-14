@@ -43,14 +43,25 @@ public class Bag<T> implements Iterable<T> {
 		return false;
 	}
 	
+	public boolean isEmpty() {
+		if(list.size() == 0) {
+			return true;
+		} 
+		return false;
+	}
+	
 	@SuppressWarnings("unchecked")
 	public T[] toArray() {
 		return (T[]) list.toArray();
 	}
 	
-
 	@Override
 	public Iterator<T> iterator() {
 		return list.iterator();
+	}
+	
+	@Override
+	public String toString() {
+		return list.toString();
 	}
 }

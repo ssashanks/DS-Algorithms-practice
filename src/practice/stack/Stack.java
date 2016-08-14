@@ -33,4 +33,10 @@ public class Stack<T> {
 		}
 	}
 	
+	@Override
+	public String toString() {
+		return list.toString();
+	}
+	
+	
 }

@@ -35,4 +35,8 @@ public class Queue<T> {
 		}
 	}
 	
+	@Override
+	public String toString() {
+		return list.toString();
+	}
 }
