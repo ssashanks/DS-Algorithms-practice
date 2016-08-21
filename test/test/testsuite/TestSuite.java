@@ -1,4 +1,4 @@
-package practice.testsuite;
+package test.testsuite;
 
 
 import org.junit.Test;
@@ -8,8 +8,8 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-        practice.linkedlist.Stack.class,
-        practice.linkedlist.Queue.class
+        test.linkedlist.Stack.class,
+        test.linkedlist.Queue.class
 })
 
 public class TestSuite {

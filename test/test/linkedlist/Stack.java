@@ -1,4 +1,4 @@
-package practice.linkedlist;
+package test.linkedlist;
 
 import org.junit.After;
 import org.junit.Before;
