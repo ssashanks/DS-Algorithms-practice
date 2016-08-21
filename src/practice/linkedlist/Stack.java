@@ -2,27 +2,48 @@ package practice.linkedlist;
 
 public class Stack<T> {
 	
-	private node first;
+	private Node first;
 	int size = 0;
 	
-	private class node 
+	private class Node 
 	{
 		T item;
-		node next;
+		Node next;
 	}
 	
 	public void push(T item)
 	{
-		node oldFirst = first;
-		node first = new node();
-		first.item = item;
-		first.next = oldFirst;
+		if (isEmpty()) {
+			Node first = new Node();
+			first.item = item;
+			first.next = null;
+		} else {
+			Node oldFirst = first;
+			Node first = new Node();
+			first.item = item;
+			first.next = oldFirst;
+		}
 		size++;
 	}
 
 	public T pop() {
-		T item = first.item;
-		first = first.next;
-		return item;
+		if (isEmpty()) {
+			System.out.println("stack empty");
+			return null;
+		} else {
+			T item = first.item;
+			first = first.next;
+			size--;
+			return item;		
+		}
 	}
+	
+	public boolean isEmpty() {
+		return (first == null);
+	}
+	
+	public int size() {
+		return size;
+	}
+	
 }
