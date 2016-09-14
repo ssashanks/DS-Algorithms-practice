@@ -8,7 +8,7 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-      //  test.linkedlist.Stack.class,
+      	test.linkedlist.StackTest.class,
         test.linkedlist.QueueTest.class
 })
 

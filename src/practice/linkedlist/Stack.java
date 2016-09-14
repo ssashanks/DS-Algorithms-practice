@@ -14,12 +14,12 @@ public class Stack<T> {
 	public void push(T item)
 	{
 		if (isEmpty()) {
-			Node first = new Node();
+			first = new Node();
 			first.item = item;
 			first.next = null;
 		} else {
 			Node oldFirst = first;
-			Node first = new Node();
+			first = new Node();
 			first.item = item;
 			first.next = oldFirst;
 		}
